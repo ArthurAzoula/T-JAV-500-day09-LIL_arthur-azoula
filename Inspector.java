@@ -9,7 +9,7 @@ public class Inspector<T> {
         }
 
         public void displayInformations() {
-            System.out.println("Information of the " + inspectedClass.getName() + " class:");
+            System.out.println("Information of the \"" + inspectedClass.getName() + "\" class:");
             System.out.println("Superclass: " + inspectedClass.getSuperclass().getName());
             System.out.println(inspectedClass.getDeclaredMethods().length + " methods:");
             for (Method method : inspectedClass.getDeclaredMethods()) {
