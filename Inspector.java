@@ -22,4 +22,8 @@ public class Inspector<T> {
 
         }
 
+        public T createInstance() throws InstantiationException, IllegalAccessException {
+            return inspectedClass.newInstance();
+        }
+
 }
